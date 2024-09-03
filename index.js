@@ -15,6 +15,7 @@ function addTodo() {
     status: "InProgress",
   });
   localStorage.setItem("arr", JSON.stringify(todos));
+  console.log(localStorage.getItem("arr"));
   render(todos);
   todos=[];
 
